@@ -234,9 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d87579fc69ea44cb3a1e9560d7890d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 9
+  jumpForce: 555
   gravityModifier: 1
   isOnGround: 1
+  gameOver: 0
 --- !u!65 &472191026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -266,7 +267,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472191024}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 60
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -523,7 +524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -531,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c14bb5ce28dbb7442a2f79d8b6a061ce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -635,7 +636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8528700331588634278, guid: 8bbe2d2fefa067a408ff35d82043365c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.89
+      value: 25.64
       objectReference: {fileID: 0}
     - target: {fileID: 8528700331588634278, guid: 8bbe2d2fefa067a408ff35d82043365c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -692,7 +693,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

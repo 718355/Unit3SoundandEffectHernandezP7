@@ -42,11 +42,11 @@ public class PlayerController : MonoBehaviour
             dirtParticle.Stop();
             doubleJumpUsed = false;
         }
-        else if(Input.GetKeyDown(KeyCode.Space)&& isOnGround && !isOnGround && !doubleJumpUsed)
+        else if(Input.GetKeyDown(KeyCode.Space)&& !isOnGround && !isOnGround && !doubleJumpUsed)
         {
-            doubleJumpUsed = false;
+            doubleJumpUsed = true;
             playerRb.AddForce(Vector3.up * doubleJumpForce, ForceMode.Impulse);
-            playerAnim.Play("Running_Jump");
+            playerAnim.Play("Running_Jump", 3,0f);
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
         if (Input.GetKey(KeyCode.LeftShift))
